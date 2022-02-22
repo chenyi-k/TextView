@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">textViewPractice</string>
+    <string name="animation">Animation</string>
+    <string name="shadow">Shadow</string>
+    <string name="blocky">Blocky</string>
+    <string name="glow">Glow</string>
+    <string name="customFont">custom font</string>
+    <string name="gradient">Gradient漸層</string>
+    <string name="picFont">cheetah</string>
+
+    <string name="from_html_text">
+        <![CDATA[
+        <h1>Hello World</h1>
+            Here is an
+            <img src="octopus"><i>octopus</i>.<br>
+            And here is a
+        <a href="http://d.android.com">
+        link</a>.
+        ]]>
+    </string>
+
+    <string name="clickableSpan">是要這樣做去設定頁面嗎～</string>
+    <string name="goToSetting">設定</string>
+
+    <string name="fraction">
+        <![CDATA[
+           1<afrc>1/2</afrc> + <afrc>11/16</afrc>= 2<afrc>3/16</afrc>
+            <br>
+            <br>
+            <afrc>22/7</afrc>
+            <afrc>355/113</afrc>
+            <afrc>103993/33102</afrc>
+        ]]>
+    </string>
+
+
+    <string name="allExampleSpanText">
+        Text with underline底線、strikethrough刪除線、subscript字符下沉、superscript字符上浮、
+        backgroundColor字符背景色、foregroundColor文本顏色、image插入圖片、style簡單樣式、typeface自定義字體、
+        textAppearance字體樣式、absoluteSize絕對尺寸、relativeSize相對尺寸、scaleX字體橫向縮放、maskFilter字體蒙板blurMaskFilter模糊、
+        rainbow彩虹樣式(靜態)、AAAAAAAA自定義SpanAAAAAAAA span
+    </string>
+    <string name="underlineText">underline底線</string>
+    <string name="strikethroughText">strikethrough刪除線</string>
+    <string name="subscriptText">subscript字符下沉</string>
+    <string name="superscriptText">superscript字符上浮</string>
+    <string name="backgroundColorText">backgroundColor字符背景色</string>
+    <string name="foregroundColorText">foregroundColor文本顏色</string>
+    <string name="imageText">image插入圖片</string>
+    <string name="styleText">style簡單樣式</string>
+    <string name="typefaceText">typeface自定義字體</string>
+    <string name="textAppearanceText">textAppearance字體樣式</string>
+    <string name="absoluteSizeText">absoluteSize絕對尺寸</string>
+    <string name="relativeSizeText">relativeSize相對尺寸</string>
+    <string name="scaleXText">scaleX字體橫向縮放</string>
+    <string name="maskFilterBlurMaskFilterText">maskFilter字體蒙板blurMaskFilter模糊</string>
+<!--    <string name="maskFilterEmbossMaskFilterText">maskFilter字體蒙板embossMaskFilter浮雕</string>-->
+
+
+    <string name="rainbow">Text with rainbow彩虹樣式(靜態)、rainbow彩虹樣式(動態) span</string>
+    <string name="rainbowText">rainbow彩虹樣式(靜態)</string>
+    <string name="rainbowAnimatedText">rainbow彩虹樣式(動態)</string>
+
+    <string name="spanText">義Span</string>
+
+    <string name="linedEditText">Text with LinedEditText 這是自己建一個class來做出</string>
+
+
+    <string name="bullet">Text with Bullet簡單項目符號 span</string>
+
+
+    <string name="quote">Text with Quote引用 span</string>
+
+    <string name="alignment">Text with \n Alignment對齊方式 span</string>
+
+    <string name="emoji">這是第一個自定義的Emoji \u26F7 第二個自定義的Emoji :octopus: 這是第三個自定義的Emoji :speed_50: :speed_60: 再來一個 :speed_100: </string>
+
+</resources>

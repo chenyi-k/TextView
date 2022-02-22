@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://ithelp.ithome.com.tw/articles/10207614?sc=iThelpR
+https://medium.com/dcardlab/%E7%B0%A1%E5%96%AE%E7%9C%8B%E6%87%82-vectordrawable-svg-path-data-fe0fb42a7f43-->
+<!--M 移動畫筆到指定座標
+    L 畫一條直線到絕對位置(x,y)
+    l 畫一條直線到相對位置(x,y)
+    H 畫一水平線到絕對路徑x座標
+    h 畫一水平線到相對路徑x座標
+    V 畫一垂直線到絕對路徑y座標
+    v 畫一垂直線到相對路徑y座標
+    Z 關閉路徑-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:width="100dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100">
+    <group
+        android:name="minute"
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="0" >
+        <path
+            android:strokeColor="@color/green"
+            android:strokeWidth="3"
+            android:pathData="M50,50 L50,15" />
+    </group>
+    <!--
+    (1) M 8,5 將畫筆移至座標8,5
+    (2) V21 畫一條垂直線至Y軸為21
+    (3) H16 畫一條水平線至X軸為16
+    (4) V5 畫一條垂直線至X軸為5
+    (5) z 關閉路徑-->
+    <group
+        android:name="hour"
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="0" >
+        <path
+            android:strokeColor="@color/teal_200"
+            android:strokeWidth="3"
+            android:pathData="M50,50 L50,30" />
+    </group>
+    <path
+        android:strokeColor="@android:color/holo_red_dark"
+        android:strokeWidth="3"
+        android:pathData="M 50, 50 m -45, 0 a 45, 45 0 1, 0 90, 0 a 45, 45 0 1, 0 -90, 0"/>
+</vector>
+

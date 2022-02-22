@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--http://wangkuiwu.github.io/2014/07/24/PropertyAnimation-XmlUsage/
+(01): 是objectAnimator和animator的集合。標籤是可以嵌套的。
+(02): 對應是ObjectAnimator動畫。
+(03): 對應是ValueAnimator動畫。
+(04) android:propertyName : 屬性名。僅ObjectAnimator才有該屬性。rotation:z軸旋轉
+(05) android:duration : 動畫的總時間，以ms為單位，默認是300ms。
+
+(06) android:valueFrom : 動畫的起始值。
+(07) android:valueTo : 動畫的結束值。
+
+(08) android:startOffset : 動畫的起始偏移時間，以ms為單位。
+(09) android:repeatCount : 動畫重複播放重複次數。-1表示無窮次，默認是0。
+(10) android:repeatMode : 動畫重複播放時的模式。repeat表示和原來一樣從頭開始播放，reverse表示反向播放；默認是repeat。
+(11) android:valueType : 屬性的值的類型。可以位intType或floatType。-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:duration="10000"
+        android:propertyName="rotation"
+        android:valueFrom="0"
+        android:repeatCount="0"
+        android:valueTo="360" />
+</set>

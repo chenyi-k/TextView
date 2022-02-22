@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!--動畫旋轉、wifi、時間-->
+            <!--參考:https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable#VDExample-->
+            <TextView
+                android:id="@+id/mAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/animation"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/rotating_loading"
+                android:drawableRight="@drawable/animated_wifi"
+                android:drawableBottom="@drawable/animated_clock" />
+
+            <!--陰影效果-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/shadow"
+                android:textSize="80sp"
+                android:textStyle="bold"
+                android:shadowColor="#7000"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="8"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/blocky"
+                android:textColor="@color/purple"
+                android:textSize="80sp"
+                android:textStyle="bold"
+                android:shadowColor="@color/green"
+                android:shadowDx="10"
+                android:shadowDy="-10"
+                android:shadowRadius="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/glow"
+                android:textSize="80sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"
+                android:shadowColor="@color/yellow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="50"/>
+
+            <!--自定義字體-->
+            <TextView
+                android:id="@+id/mCustomFont"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/customFont"
+                android:textSize="60sp"/>
+
+            <!--漸變色-->
+            <TextView
+                android:id="@+id/mGradientFont"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gradient"
+                android:textSize="60sp"/>
+
+            <!--圖片填充文字-->
+            <TextView
+                android:id="@+id/mPicFont"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/picFont"
+                android:textSize="60sp"/>
+
+            <!--多樣式 HTML-->
+            <TextView
+                android:id="@+id/mHtmlFont"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mClickableSpan"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clickableSpan"
+                android:textColorHighlight="@color/light_green"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mFraction"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"/>
+
+            <TextView
+                android:id="@+id/mAllExampleSpan"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allExampleSpanText"
+                android:lineSpacingExtra ="8dp"
+                android:textSize="20sp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/mAllExampleSpan2"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/allExampleSpanText"-->
+<!--                android:lineSpacingExtra ="8dp"-->
+<!--                android:textSize="20sp"/>-->
+
+            <!--帶橫線的 EditText-->
+            <com.example.textviewpractice.LineEditText
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/light_yellow"
+                android:text="@string/linedEditText"
+                android:lineSpacingExtra ="8dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mBulletSpan"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bullet"
+                android:lineSpacingExtra ="8dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mLeadingMarginSpan"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mQuoteSpan"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quote"
+                android:lineSpacingExtra ="8dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mAlignmentSpan"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alignment"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mEmojiSpan"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emoji"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/mRainBowTest"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rainbow"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/mExplosion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/octopus" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

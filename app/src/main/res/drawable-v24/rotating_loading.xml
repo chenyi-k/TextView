@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+android:pivotX 旋轉中心點的X座標
+android:pivotY 旋轉中心點的Y座標
+android:duration 動畫持續的時間(毫秒)
+-->
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:drawable="@drawable/ic_loading"
+    android:duration="500" />
